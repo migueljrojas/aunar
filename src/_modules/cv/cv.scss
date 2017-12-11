@@ -1,0 +1,148 @@
+.cv {
+    $cv: &;
+
+    @include mq(md){
+        display: flex;
+        position: relative;
+    }
+
+    &__name {
+        @include trans;
+        height: 40px;
+        line-height: 40px;
+        color: $mainColor;
+        position: relative;
+        padding: 0 15px;
+        margin: 0;
+        cursor: pointer;
+
+        @include mq(md){
+            flex-basis: 50%;
+        }
+
+        &:before,
+        &:after {
+            @include trans;
+
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: $mainColor;
+            top: 19px;
+            right: 15px;
+
+            @include mq(md){
+                right: 30px;
+            }
+        }
+
+        &:after {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__wrapper {
+        @include trans;
+        max-height: 0;
+        position: relative;
+        overflow: hidden;
+
+        @include mq(md){
+            flex-basis: 50%;
+            position: absolute;
+            right: 0;
+            width: 50%;
+            background: $bgSecondary;
+            color: $white;
+            z-index: 10;
+        }
+
+        &__inner {
+            height: 300px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar-track {
+            	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.15);
+            	background-color: $lightestGray;
+                @include mq(md){
+                	background-color: $mainColor - #222;
+                }
+            }
+
+            &::-webkit-scrollbar {
+            	width: 5px;
+            	background-color: $lightestGray;
+                @include mq(md){
+                	background-color: $mainColor - #222;
+                }
+            }
+
+            &::-webkit-scrollbar-thumb {
+            	background-color: $mainColor;
+
+                @include mq(md){
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+        padding: 10px 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        padding: 10px 15px 10px 30px;
+
+        li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left:-30px;
+                width: 3px;
+                height: 12px;
+                background: $mainColor;
+
+                @include mq(md){
+                    background: $white;
+                }
+            }
+        }
+
+    }
+
+    &.-open {
+
+
+        #{$cv}__name {
+            background: $lightestGray;
+
+            &:after {
+                transform: rotate(0);
+            }
+        }
+
+        #{$cv}__wrapper {
+            max-height: 60vh;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 15px;
+                width: 100%;
+                left: 0;
+                background: linear-gradient(to top, rgba(0,0,0,.15), rgba(0,0,0,0));
+            }
+        }
+    }
+}

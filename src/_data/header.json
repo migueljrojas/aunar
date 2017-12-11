@@ -1,6 +1,26 @@
 [
     {
-        "name":"",
-        "url":""
+        "name":"Home",
+        "url":"/#home"
+    },
+    {
+        "name":"Capacitación a Distancia",
+        "url":"/#capacitacion"
+    },
+    {
+        "name":"Aranceles y Formas de pago",
+        "url":"/#aranceles"
+    },
+    {
+        "name":"Plantel",
+        "url":"/#plantel"
+    },
+    {
+        "name":"Campus Virtual",
+        "url":"/#campus"
+    },
+    {
+        "name":"Contacto",
+        "url":"/#contacto"
     }
 ]

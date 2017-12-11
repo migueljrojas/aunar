@@ -1,0 +1,18 @@
+mixin cv(data)
+    .cv
+        h4.cv__name=data.name
+        .cv__wrapper
+            .cv__wrapper__inner
+                h5.cv__title Formación Académica
+                ul.cv__list
+                    each item in data.formacion
+                        li= item
+                h5.cv__title Antecedentes Profesionales
+                ul.cv__list
+                    each item in data.curriculum
+                        li= item
+                if data.cursos
+                    h5.cv__title Cursos, Congresos y Otros
+                    ul.cv__list
+                        each item in data.cursos
+                            li= item

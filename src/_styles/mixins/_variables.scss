@@ -6,17 +6,16 @@ $darkGray: #787871;
 $midGray: #999;
 $lightGray: #ebebeb;
 $lightestGray: #f4f7f8;
-$blue: #053f7a;
-$blueGray: #bbc9c9;
+$green: #658f44;
 
-$mainColor: $blue;
-$link: $blue;
-$linkHover: $blue + #333;
-$text: $white;
+$mainColor: $green;
+$link: $mainColor;
+$linkHover: $mainColor + #333;
+$text: $darkGray;
 $textDark: $black;
-$accent: $blue;
+$accent: $mainColor;
 $bg: $white;
-$bgSecondary: $blue;
+$bgSecondary: $mainColor;
 $bgDark: $black;
 
 $base: 40px;
@@ -35,4 +34,4 @@ $duration: 0.3s;
 $easing: cubic-bezier(.785, .135, .15, .86);
 $easingLight: ease;
 
-$mainFont: 'Open Sans', sans-serif;
+$mainFont: 'Roboto', sans-serif;

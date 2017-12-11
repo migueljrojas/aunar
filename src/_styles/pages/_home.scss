@@ -1,3 +1,415 @@
 .home {
-    
+    @include mq(md){
+        padding-left: 250px;
+    }
+
+    .container {
+
+        @include mq(md){
+            max-width: 100%;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+
+    &__hero {
+        padding-bottom: 50px;
+
+        @include mq(md){
+            padding-bottom: 100px;
+        }
+
+        &__img {
+            height: 65vh;
+            background: url('/images/home/hero-mobile.jpg') no-repeat center center / cover;
+            @include mq(sm){
+                background: url('/images/home/hero.jpg') no-repeat bottom center / cover;
+            }
+
+            @include mq(md) {
+                height: 80vh;
+            }
+        }
+
+        &__title {
+            font-weight: 700;
+        }
+
+        &__tagline {
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+            text-transform: uppercase;
+            text-align: center;
+
+            span, i{
+                display: block;
+                line-height: 1.1;
+            }
+
+            i {
+                font-size: 128px;
+                color: rgba(0,0,0,.2);
+            }
+
+            span {
+
+                &:nth-of-type(1){
+                    font-size: 19px;
+                    letter-spacing: -0.2px;
+                }
+                &:nth-of-type(2){
+                    font-weight: 700;
+                    font-size: 28px;
+                    letter-spacing: 2px;
+                }
+                &:nth-of-type(3){
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    &__form {
+
+        $f: &;
+
+        @include trans;
+        background: $lightGray;
+        position: relative;
+
+        @include mq(md){
+            position: fixed;
+            top:50%;
+            transform: translate3d(0, -50%, 0);
+            right: 0;
+            width: 280px;
+            z-index: 80;
+        }
+
+        &__trigger {
+            display: none;
+
+            @include mq(md){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $bgSecondary - #222;
+                border: none;
+                color: $white;
+                position: absolute;
+                top: 0;
+                left: -40px;
+                height: 40px;
+                width: 40px;
+
+                i {
+                    font-size: 28px;
+                    @include trans;
+                }
+            }
+        }
+
+        &__title {
+            background: $bgSecondary;
+            color: $white;
+            height: 40px;
+            line-height: 40px;
+            font-size: 21px;
+            padding: 0 15px;
+            margin: 0 0 15px;
+        }
+
+        &__group {
+            padding: 0 15px 15px;
+        }
+
+        &__input {
+            width: 100%;
+            background: $white;
+            height: 32px;
+            line-height: 32px;
+            border: none;
+            padding: 0 10px;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border-bottom: 2px solid $mainColor;
+            }
+        }
+
+        &__submit {
+            width: 100%;
+            background: $link;
+            color: $white;
+            border-radius: 10px;
+            height: 40px;
+            line-height: 40px;
+            border: none;
+        }
+
+        &.-closed{
+            @include mq(md){
+                transform: translate3d(100%, -50%, 0);
+            }
+
+            #{$f}__trigger {
+                i {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    &__plantel {
+        padding-top: 50px;
+        &__category {
+            font-weight: 700;
+            padding: 0 15px;
+        }
+
+        &__subcategory {
+            font-weight: 700;
+            color: $mainColor;
+            padding: 7px 15px;
+            background: $lightestGray;
+            margin: 0;
+
+            @include mq(md){
+                background: none;
+            }
+        }
+
+        &__title {
+            padding: 0 15px;
+        }
+
+        &__teachers {
+            border-top: 1px solid $lightGray;
+
+            @include mq(md){
+                border: none;
+            }
+
+            &--tutores {
+                .cv__wrapper {
+                    @include mq(md){
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &__teacher {
+            border-bottom: 1px solid $lightGray;
+            @include mq(md){
+                border: none;
+                padding-left: 30px;
+            }
+        }
+    }
+
+    &__capacitacion {
+        .section-title {
+            padding-bottom: 20px;
+        }
+        &__title {
+            font-weight: 700;
+            padding: 0 15px;
+        }
+        &__slider {
+            padding-bottom: 50px;
+            .slick-dots {
+                left: 10px;
+                right: 10px;
+                transform: translateX(0);
+                bottom: 10px;
+
+                li{
+                    width: 10px;
+                    height: 10px;
+
+                    button:before {
+                        color: $mainColor;
+                    }
+                }
+            }
+
+            .slick-prev, .slick-next {
+                @include mq(md){
+                    top: 90%;
+                    &:before {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+        &__slide{
+            width: 180px;
+            padding: 10px;
+        }
+        &__curso {
+            background: $lightestGray;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,.15);
+
+
+            &__data{
+                background: $mainColor;
+                color: $white;
+                display: flex;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 10px;
+
+                ._res {
+                    flex-basis: 40%;
+                }
+
+                ._pts,
+                ._hor {
+                    flex-basis: 30%;
+                }
+
+                span {
+                    display: block;
+                    font-weight: 300;
+                }
+            }
+
+            &__name {
+                padding: 10px;
+
+                ._name {
+                    font-size: 14px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    &__aranceles {
+        padding-top: 50px;
+        &__data {
+            padding: 0 15px;
+            @include mq(sm){
+                padding: 0;
+            }
+        }
+
+        &__highlight {
+            background: $lightestGray;
+            font-size: 16px;
+            text-transform: uppercase;
+            padding: 20px;
+            margin-bottom: 10px;
+
+            p {
+                margin: 0
+            }
+        }
+
+        &__title {
+            font-weight: 700;
+        }
+    }
+
+    &__campus {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @include mq(md) {
+            padding-top: 100px;
+        }
+
+        &__title {
+            font-weight: 700;
+        }
+
+        &__highlight {
+            background: $lightestGray;
+            padding: 20px;
+            p {
+                font-size: 16px;
+
+                @include mq(md){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &__contacto {
+        padding: 70px 0 0;
+        background: $lightestGray;
+        text-align: center;
+
+        @include mq(md){
+            padding-bottom: 70px;
+        }
+
+        &__section {
+            padding: 0 15px 20px;
+        }
+
+        &__title {
+            font-weight: 700;
+        }
+
+        i {
+            color: $mainColor;
+            margin-right: 5px;
+        }
+
+        &__social {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 0 10px;
+            }
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                text-align: center;
+                background: $mainColor;
+                border-radius: 50%;
+
+                i {
+                    font-size: 18px;
+                    color: $white;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+
+        @include mq(md){
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: -0.2px;
+
+        @include mq(md){
+            margin: 0;
+        }
+    }
 }

@@ -14662,31 +14662,93 @@ return jQuery;
 'use strict';
 
 // Constructor
-var Header = function() {
-    var header = $('.header');
-    var body = $('body');
-    var menuOpen = $('.header__hamburguer');
-    var menuClose = $('.header__nav__close');
+var Cv = function() {
 
-    menuOpen.on('click', function(){
-        header.addClass('-open');
-        body.addClass('-hideOverflow');
-    });
+    var context = $('.cv');
 
-    menuClose.on('click', function(){
-        header.removeClass('-open');
-        body.removeClass('-hideOverflow');
-    });
+    if (context.length) {
+        context.each(function(){
+            var $this = $(this);
+
+            $this.on('click', function(){
+                if ($this.hasClass('-open')) {
+                    $this.removeClass('-open');
+                } else {
+                    context.removeClass('-open');
+                    $this.addClass('-open');
+                }
+            });
+        });
+    }
 };
 
-module.exports = Header;
+module.exports = Cv;
 
 },{}],6:[function(require,module,exports){
 'use strict';
 
 // Constructor
+var Header = function() {
+    var header = $('.header');
+    var body = $('body');
+    var menuOpen = $('.header__hamburguer');
+    var menuItems = $('.header__menu a');
+
+    menuOpen.on('click', function(){
+        header.toggleClass('-open');
+        body.toggleClass('-hideOverflow');
+    });
+
+    menuItems.on('click', function(){
+        header.removeClass('-open');
+        body.removeClass('-hideOverflow');
+    });
+
+
+
+    $('a[href="#"]').on('click', function(e){
+        e.preventDefault();
+    });
+
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .not('[class="js-trigger"]')
+    .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top + -0
+            }, 1000, function() {
+              return false;
+            });
+          }
+        }
+    });
+};
+
+module.exports = Header;
+
+},{}],7:[function(require,module,exports){
+'use strict';
+
+// Constructor
 var Slider = function() {
     var slider = $('._slider');
+    var sliderMulti = $('._slidermulti');
     if (slider) {
         slider.each(function(){
             $(this).slick({
@@ -14697,11 +14759,75 @@ var Slider = function() {
             });
         });
     }
+    if (sliderMulti) {
+        sliderMulti.each(function(){
+            $(this).slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 1380,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            centerMode: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    }
 };
 
 module.exports = Slider;
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
+'use strict';
+
+var Home = function() {
+    var form = $('.home__form');
+    var formTrigger = $('.home__form__trigger');
+    var indexSection = $('#contacto');
+
+    $(window).on('scroll', function(){
+        var scroll = $(window).scrollTop();
+        var formTop = form.get(0).getBoundingClientRect().top;
+        var formBottom = indexSection.get(0).getBoundingClientRect().top;
+
+        if ( scroll >= 200 && formBottom >= 600 ) {
+            form.addClass('-closed');
+        } else {
+            form.removeClass('-closed');
+        }
+    });
+
+    formTrigger.on('click', function(e){
+        form.toggleClass('-closed');
+        e.preventDefault();
+    });
+}
+
+module.exports = Home;
+
+},{}],9:[function(require,module,exports){
 (function (global){
 // Main javascript entry point
 // Should handle bootstrapping/starting application
@@ -14712,6 +14838,8 @@ global.$ = global.jQuery = require('jquery');
 global._ = require('underscore');
 var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
+var Cv = require('../_modules/cv/cv');
+var Home = require('./home');
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
@@ -14719,10 +14847,12 @@ $(function() {
 
     new Header();
     new Slider();
+    new Cv();
+    new Home();
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
-},{"../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min":1,"../../bower_components/slick-carousel/slick/slick":2,"../_modules/header/header":5,"../_modules/slider/slider":6,"jquery":3,"underscore":4}]},{},[7])
+},{"../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min":1,"../../bower_components/slick-carousel/slick/slick":2,"../_modules/cv/cv":5,"../_modules/header/header":6,"../_modules/slider/slider":7,"./home":8,"jquery":3,"underscore":4}]},{},[9])
 
 //# sourceMappingURL=main.js.map

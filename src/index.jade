@@ -1,4 +1,167 @@
 extends _layouts/base
 
+include _modules/cv/cv
+include _modules/slider/slider
+
 block content
     main.home
+        section#home.home__hero
+            .home__hero__img
+            .container
+                .row
+                    .col-xs-24.col-sm-16
+                        h1.home__hero__title AUNAR Proyectos Educativos
+                        p.home__text Ofrece programas de capacitación diseñados a partir de investigaciones realizadas en diferentes campos educativos. Actividades en el Aula, Recursos Didácticos.
+                        p.home__text La experiencia de especialistas en contenidos y en el trabajo de aula garantizan los resultados de sus aprendizajes y la aplicación de los mismos en su gestión. Queremos que conozca nuestra propuesta.
+                    .col-xs-24.col-sm-8
+                        form.home__form
+                            button.home__form__trigger
+                                i.material-icons keyboard_arrow_right
+                            h2.home__form__title Información de los Cursos
+                            .home__form__group
+                                input.home__form__input(type="text", name="name", placeholder="Nombre y apellido")
+                            .home__form__group
+                                input.home__form__input(type="text", name="telefono", placeholder="Teléfono")
+                            .home__form__group
+                                input.home__form__input(type="email", name="email", placeholder="Email")
+                            .home__form__group
+                                select.home__form__input.home__form__input--select(type="text", name="horario")
+                                    option(value="0") Horario para ser contactado
+                                    option(value="1") De 8 a 12
+                                    option(value="2") De 12 a 16
+                                    option(value="3") De 16 a 20
+                            .home__form__group
+                                button.home__form__submit(type="submit") Enviar
+                                        
+                        .home__hero__tagline
+                            i.material-icons arrow_downward
+                            span propuesta de acercamiento
+                            span a la realidad
+                            span de nuestras aulas
+                            i.material-icons arrow_upward
+                            
+        section#capacitacion.home__capacitacion
+            .container
+                .row.nopadding-xs
+                    .col-xs-24
+                        img.img-responsive.hidden-sm.hidden-md.hidden-lg(src="/images/home/capacitacion-mobile.jpg")
+                        img.img-responsive.hidden-xs.home__img(src="/images/home/capacitacion.jpg")
+
+                .row
+                    .col-xs-24
+                        h2.section-title Capacitación a distancia
+                    .col-xs-24.col-sm-12
+                        p.home__text Nuestros Proyectos de Capacitación están diseñados para el logro de la excelencia académica de docentes y directivos.
+                        p.home__text Usted cuenta con el acompañamiento de docentes especializados en el contenido abordado y en su didáctica.
+                    .col-xs-24.col-sm-12
+                        p.home__text La evaluación final se realiza en una instancia presencial y luego de haber aprobado las actividades correspondientes.
+                        p.home__text En los certificados emitidos por la aprobación del curso se detalla el número de Resolución que acredita el puntaje y la carga horaria del mismo.
+                
+                .row.nopadding-xs
+                    .col-xs-24
+                        h3.home__capacitacion__title Cursos
+                        +slider('home__capacitacion__slider', 'multi')
+                            each course in site.data.home.cursos
+                                .home__capacitacion__slide
+                                    .home__capacitacion__curso
+                                        .home__capacitacion__curso__data
+                                            ._res Resolución
+                                                span=course.res
+                                            ._pts Puntaje
+                                                span=course.pts
+                                            ._hor Horas
+                                                span=course.hor
+                                        .home__capacitacion__curso__name
+                                            h4._name=course.name
+                            
+        section#aranceles.home__aranceles
+            .container
+                .row.nopadding-xs
+                    .col-xs-24.col-sm-12
+                        img.img-responsive.hidden-sm.hidden-md.hidden-lg(src="/images/home/aranceles-mobile.jpg")
+                        img.img-responsive.hidden-xs(src="/images/home/aranceles.jpg")
+                    .col-xs-24.col-sm-12
+                        .home__aranceles__data
+                            h2.section-title Aranceles
+                            h3.home__aranceles__title Matrícula
+                            p.home__text Solo una vez al año, independientemente de las capacitaciones que usted realice a lo largo del ciclo lectivo en nuestra institución.
+                            .home__aranceles__highlight
+                                p IMPORTANTE NUESTRA INSTITUCIÓN NO COBRA DERECHO DE EXAMEN
+                            p.home__text Consulte sobre costos y formas de pago de cursos y promociones
+        
+        section#plantel.home__plantel
+            .container
+                .row.nopadding
+                    .col-xs-24
+                        img.img-responsive.hidden-sm.hidden-md.hidden-lg(src="/images/home/plantel-mobile.jpg")
+                        img.img-responsive.hidden-xs.home__img(src="/images/home/plantel.jpg")
+
+                        h2.section-title.home__plantel__title PLANTEL PEDAGÓGICO
+                        h3.home__plantel__category Dirección Académica
+                        ul.home__plantel__teachers
+                            each item in site.data.home.teachers
+                                if item.type == "director"
+                                    li.home__plantel__teacher
+                                        +cv(item)
+                        h3.home__plantel__category Capacitadores
+                            h4.home__plantel__subcategory Asesoría pedagógica
+                            ul.home__plantel__teachers
+                                each item in site.data.home.teachers
+                                    if item.type == "asesor"
+                                        li.home__plantel__teacher
+                                            +cv(item)
+                            h4.home__plantel__subcategory Tutores
+                            ul.home__plantel__teachers.home__plantel__teachers--tutores
+                                each item in site.data.home.teachers
+                                    if item.type == "tutor"
+                                        li.home__plantel__teacher
+                                            +cv(item)
+                                                                
+                        
+        section#campus.home__campus
+            .container
+                .row
+                    .col-xs-24.col-sm-12
+                        h2.section-title Campus Virtual
+                        h3.home__campus__title ¿Qué es el Campus Virtual Educativo?
+                        p.home__text El Campus Virtual de AUNAR Proyectos Educativos es un espacio que ofrece a los alumnos la opción de comunicarse con los tutores.
+                        p.home__text Este espacio permite a los alumnos aclarar dudas sobre la bibliografía y las actividades a realizarse a partir del material procesado didácticamente desde cualquier lugar, sin limitaciones geográficas y sin restricciones horarias, adaptando el horario de estudio a su disponibilidad.
+
+                    .col-xs-24.col-sm-12
+                        p.home__text Un equipo de tutores se encarga de acompañar el aprendizaje de los alumnos en un trabajo conjunto con los autores de cada módulo aportando a los materiales sus conocimientos fundamentados en cada tema y su propia experiencia profesional.
+                        .home__campus__highlight
+                            p El ingreso al campo virtual es sólo para Profesores  y Alumnos inscriptos a cursos
+                            p
+                                | Para ingresar al Campus Virtual de 
+                                strong AUNAR PROYECTOS EDUCATIVOS 
+                                | introduzca su clave personal. Si usted aún no tiene la tiene, por favor, solicítela completando el siguiente formulario
+                            a._button(href="http://aunareducacion.com.ar/campus.php") Ingresar al campus
+
+        section#contacto.home__contacto
+            .container
+                .row
+                    .col-xs-24
+                        h2.section-title Contactanos
+                .row.nopadding-xs
+                    .col-xs-24.col-sm-12.col-md-8
+                        .home__contacto__section
+                            h3.home__contacto__title Atención al Cliente
+                            p.home__text
+                                i.fa.fa-phone  
+                                |  0810  999  5163
+                            ul.home__contacto__social
+                                each red in site.data.social
+                                    li
+                                        a(href=red.url, target="_blank")
+                                            i(class="fa fa-#{red.name}")
+                    .col-xs-24.col-sm-12.col-md-8
+                        .home__contacto__section
+                            h3.home__contacto__title Administración
+                            p.home__text
+                                i.fa.fa-map-marker
+                                | José Pedro Varela 5149 (1417) Ciudad Autónoma de Bs. As. 
+
+                    .col-xs-24.col-md-8
+                        .embed-responsive.embed-responsive-16by9
+                            iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.623499452819!2d-58.52329118477001!3d-34.61368088045682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d9e98b96d7%3A0xd2dcdfa3b315fbc!2sJos%C3%A9+Pedro+Varela+5149%2C+Buenos+Aires%2C+Argentina!5e0!3m2!1sen!2sve!4v1511740071084", allowfullscreen)
+            

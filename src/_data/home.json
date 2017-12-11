@@ -1,3 +1,379 @@
 {
-    
+    "teachers":[
+        {
+            "type":"director",
+            "name":"Lic. Terrada, Claudia",
+            "formacion":[
+                "Profesora de Historia -- Instituto Superior de Profesorado Joaquín V. González",
+                "Dominio de Idioma Francés"
+            ],
+            "curriculum":[
+                "Presidenta Fundadora de Asociación ARJE, Capacitación Comprometida.(2010 y continúa)",
+                "Directora Académica ARJE, Capacitación Comprometida (2010 y continúa)",
+                "Directora AUNAR, Proyectos Educativos (2007 y continúa)",
+                "Directora Instituto Superior de Formación Docente; Profesorado de Educación Física del Instituto Privado del Deporte ( 2005 y continua en uso de licencia)",
+                "Directora Escuela Serena del Instituto Privado del Deporte( 2002 a 2005)",
+                "Directora General del Instituto Privado Del Deporte ( 2000 a 2007)",
+                "Consultora en Capacitación y Selección de Personal para Empresas de primera línea, (desde 2000 y continua)",
+                "Autora Ponencia seleccionada a participar del CONGRESO PEDAGÓGICO CUBA, PEDAGOGÍA 2001",
+                "Directora Fundadora del Colegio Polimodal del Instituto Privado del Deporte (año 1994 a 2002)",
+                "Directora de Proyecto, Diseño Curricular y Gestión de Apertura de Cada uno de los niveles de Enseñanza de la Fundación para el Desarrollo del Deporte y la Cultura, Inicial año 1995, Profesorado De Educación Física 1995, Nivel Medio 1994, EGB 1996.",
+                "Autora del Plan oficial reconocido por el Ministerio de Educación de la Provincia de Buenos Aires, de implementación en nivel Polimodal de las escuela de la provincia ; “Humanidades y Ciencias Sociales con orientación en Tiempo Libre, Recreación Y Deporte” (1999)",
+                "Profesora de Metodología de estudio, Profesorado de Educación Física Del Instituto privado del Deporte ( 1996)",
+                "Profesora de Pedagogía y Filosofía, Instituto del Profesorado, SAN MARTÍN (1992 a 1996)",
+                "Profesora Técnicas de Estudio, Filosofía, Metodología y Trabajo Científico, Colegio Secundario Instituto Maipú (1993 a 1995)",
+                "RECTORA Colegio Secundario, Dr. Manuel Belgrano (1989 a 1992)",
+                "Profesora Cátedra Metodología del Trabajo Científica, Carrera de Hemoterapia, Escuela Superior de Sanidad de la Pcia. de Buenos Aires. Ministerio de Salud de la Pcia. de Buenos. Aires. (1987)"
+            ]
+        },
+        {
+            "type":"asesor",
+            "name":"Lic. Gigena, Cristian Gabriel",
+            "formacion":[
+                "Licenciado en Gestión Educativa (UNLaM).",
+                "Maestría en Ciencias Sociales con Orientación en Educación. Período de Tesis. FLACSO. Especialización en Políticas Educativas. FLACSO.",
+                "Profesor de Matemática, Física y Cosmografía.",
+                "Posgrado en Sociedad, Cultura y Política en el siglo XX (FLACSO)."
+            ],
+            "curriculum":[
+                "Desde 1998. Profesor en Escuelas de Nivel Secundario (Pcia. de Bs. As.)",
+                "Actualmente. Director y Vice Director de Escuelas de Nivel Secundario (Pcia. de Bs. As.)",
+                "Desde 2006. Catedrático en la Licenciatura en Gestión Educativa de la UNLaM.",
+                "Integrante de un grupo de investigación de la UNLaM."
+            ]
+        },
+        {
+            "type":"asesor",
+            "name":"Lic. Herzel, Carolina",
+            "formacion":[
+                "Licenciada en Biología, otorgado por la Universidad Nacional de La Plata.",
+                "Especialista en Educación en Ambiente para el Desarrollo Sustentable, otorgado por la Universidad Nacional del Comahue."
+            ],
+            "curriculum":[
+                "Profesora de Didáctica de las Ciencias Elementales Básicas, suplente en el IFD Nº5, Plottier, Consejo Provincial de Educación, Neuquén. 2000-2007",
+                "Profesora de Didáctica de la Ciencias Naturales, interina en el I.F.D. Nº 6, Consejo Provincial de Educación, Neuquén. 1999-2007",
+                "Ayudante de Trabajos Prácticos de la Didáctica de las Ciencias Naturales, interina en el I.F.D. Nº 6, C.P.E., Neuquén. 1998- 1999",
+                "Ayudante de Trabajos Prácticos de la Didáctica de las Ciencias Naturales, interina en el I.F.D. Nº 6, C.P.E., Neuquén. 1995-1996"
+            ]
+        },
+        {
+            "type":"asesor",
+            "name":"Mag. Rossi, Laura Cecilia",
+            "formacion":[
+                "Magister Universidad CAECE–Fundec Maestría en Gestión de Proyectos Educativos",
+                "Universidad de Buenos Aires, Facultad de Filosofía y Letras.",
+                "Licenciatura en Letras Profesorado de Enseñanza Media y Superior en Letras"
+            ],
+            "curriculum":[
+                "Marzo 2001 a Febrero 2005 Instituto Naciones Unidas",
+                "Docente Enseñanza de Lenguajes Artísticos en 1° y 2° año Polimodal.",
+                "Enseñanza de Culturas y Estéticas Contemporáneas en 3° año Polimodal.",
+                "Marzo de 2003 a Febrero 2005",
+                "Coordinadora del Departamento de Comunicación Marzo de 2003 a Febrero de 2005",
+                "Formación de Recursos Humanos",
+                "Editora de la revista cultural Caleidoscopio, de circulación institucional."
+            ]
+        },
+        {
+            "type":"asesor",
+            "name":"Prof. Buttazzoni, Patricia Clara",
+            "formacion":[
+                "Profesora de enseñanza media y superior en Ciencias Antropológicas Universidad Nacional de Buenos Aires",
+                "Licenciatura en Ciencias Antropológicas con orientación en Antropología Social. (Tesis en elaboración)"
+            ],
+            "curriculum":[
+                "Formador de Formadores y o capacitador: DGCyE. Dirección de Capacitación. Región IX, CIE Moreno. Capacitadora- ETR Antropología. (Desde febrero de 2",
+                "Profesora de Historia de la Cultura Niveles I a VI (Cátedra Castillo) SR: Ayudante de 1º dedicación simple, interina. Instituto Universitario Nacional de Arte (IUNA) Departamento de Artes Visuales Prilidiano Pueyrredón.",
+                "Prof. de Antropología para el 1° Año del profesorado de Historia y el 4° año de la carrera del profesorado de Biología- ISFD N °: 34 'Ingeniero Medici' Distrito: Tres de Febrero (2005 - Continúa)",
+                "Prof. de Antropología para 4° año de la carrera del profesorado de Biología y el 1º año de la carrera del profesorado de Historia - ISFD N °: 39 Distrito: Vicente López. (2007 - Continúa)",
+                "Prof. de Cultura y Comunicación – Cargo Titular (2008) – San Isidro – Institución EEM Nº: 13 - - - Prof. de Cultura y Comunicación – Distrito: San Isidro – Institución EEM Nº: 6- Cargo Titular (2009)",
+                "Prof. de Biología 3º año Polimodal Colegio San Pablo Norte. Distrito: Malvinas Argentinas – (contrato por años 2010 y 2011)",
+                "Prof. Ciencias Naturales Institución: ESB N°:324 - Distrito: Malvinas Argentinas - (2004 – Continúa)"
+            ]
+        },
+        {
+            "type":"asesor",
+            "name":"Prof. Galeli, Daniela Isabel",
+            "formacion":[
+                "Profesora para la Enseñanza Primaria",
+                "Profesora en Psicopedagogía",
+                "Especialización en Informática Educativa, UDA",
+                "Profesora de Nivel Medio"
+            ],
+            "curriculum":[
+                "Prof. Tutora en Educación a Distancia del Ejército, Esc. Subof. Sargento Cabral (1992-Cont.)",
+                "Cargo Directivo de Nivel Polimodal- Instituto 'Álvarez Condarco', Sourdeaux (2000-Cont.)",
+                "Dictado de Cursos de Capacitación para docentes y Directivos en Editorial Santillana. (1995- 2004)"
+            ]
+        },
+        {
+            "type":"tutor",
+            "name":"Lic. Acuña, Liliana",
+            "formacion":[
+                "Profesora de Historia -- Instituto Superior de Profesorado Joaquín V. González",
+                "Dominio de Idioma Francés"
+            ],
+            "curriculum":[
+                "Apoyo escolar para adolescentes y adultos Parroquia San Francisco Solano",
+                "Tareas de preceptora en la escuela Esteban Echeverría (Córdoba)",
+                "Ayudante de cátedra en la asignatura Historia de América Latina Contemporánea en el Instituto del Profesorado Joaquín V. González.",
+                "Profesora de Historia y Educación Cívica en el Instituto de Nuestra futura Generación (*).",
+                "Profesora suplente en el Instituto María Ana Mogas (2004)",
+                "Profesora suplente en el Instituto Santa Teresa de Jesús (2005)",
+                "Profesora suplente de Historia en el Instituto Luján de los Patriotas (2006).",
+                "Profesora suplente en el CENS Nro. 25 Ciudad Autónoma de Bs. As. 2006 y continúa.",
+                "Profesora suplente en el Instituto San Cayetano (2006)"
+        ],
+        "cursos":[
+            "Curso intensivo de post-grado con puntaje para la carrera docente universitaria sobre Derecho de los pueblos originarios, dictado en la Facultad de Derecho - Universidad Nacional de Buenos Aires – julio 2003.-",
+            "Concurrente al primer Encuentro Nacional de Educación e Identidades, llevado a cabo en septiembre de 2003 en la Universidad Nacional de Luján.",
+            "Participante en el Foro de Educación para docentes de escuelas secundarias de la Vicaría Episcopal del Arzobispado de Buenos Aires y la Secretaría de Educación del Gobierno de la Ciudad de Buenos Aires -2004 –",
+            "Asistente al Primer Encuentro de ADHILAC Argentina América 1084-2004",
+            "Curso de Sociología e Historia del Cristianismo en Argentina dictado por CEIL PIETTE del CONICET"
+        ]
+        },
+        {
+            "type":"tutor",
+            "name":"Lic. Alonso, Ariel",
+            "formacion":[
+                "Profesor en Historia (Instituto de Enseñanza N1 “Alicia Moreau de Justo”. G.C.B.A.).",
+                "Diploma Superior en Currículum Escolar. FLACSO. (Facultad Latinoamericana de Ciencias Sociales).",
+                "Especialización en Currículum Escolar. FLACSO."
+            ],
+            "curriculum":[
+                "Trayectos de actualización y/o formación académica cursados en Instituciones reconocidas, en los últimos cinco años y referidos específicamente al área en la que se postula como capacitador.",
+                "Antecedentes como Formador de Formadores y/o capacitador en los últimos cinco años. Deberá presentar constancia autenticada de cada capacitación",
+                "Antecedentes o sólidos conocimientos que pueda certificar en el área, ciclo, nivel o modalidad en la que aspira capacitar.",
+                "Docente (Ayudante de Primera), en el C.B.C de la Universidad de Buenos Aires cátedra: Ivancich y Battistini de ciencias políticas.",
+                "Docente del programa de UBA XXII en las cárceles, unidad Nº 2 penal de Villa Devoto.",
+                "Docente de los niveles de Secundaria Básica, y Ciclo Superior en escuelas de la Pcia. de Buenos Aires."
+            ]
+        },
+        {
+            "type":"tutor",
+            "name":"Lic. Gigena, Cristian",
+            "formacion":[
+                "Licenciado en Gestión Educativa.",
+                "Profesor de Matemática, Física y Cosmografía.",
+                "Sociedad, Cultura y Política en el Siglo XX.",
+                "Maestría en Ciencias Sociales con Orientación en Educación."
+            ],
+            "curriculum":[
+                "Desempeño en la docencia, desde 1998, en el nivel de la EGB 3 (ESB) y del nivel Polimodal.",
+                "Ayudante de cátedra en la Licenciatura en Gestión Educativa (Universidad Nacional de La Matanza)."
+            ],
+            "cursos":[
+                "Cibercultura y educación.",
+                "Desde una nueva mirada. Procedimientos e instrumentos para evaluar.",
+                "Educación en la diversidad.",
+                "Educación y nuevas tecnologías.",
+                "El valor de enseñar a pensar.",
+                "Evaluación de los aprendizajes. Un compromiso compartido.",
+                "Gestión de instituciones escolares.",
+                "Gestión de recursos didácticos y planificación de proyectos educativos.",
+                "La escuela y el otro diferente.",
+                "La gestión curricular en el aula.",
+                "La secuencia didáctica centrada en el alumno y La secuencia didáctica centrada en el alumno de polimodal.",
+                "Mediación educativa: estrategias pedagógico-didácticas para abordar los contenidos de formación ética en el aula.",
+                "Salud y adicciones.",
+                "Salud y alimentación.",
+                "Salud y prevención.",
+                "Transformación de la práctica desde la investigación acción. El docente como investigador de la práctica.",
+                "Valores solidarios en la escuela.",
+                "El rol del director en la gestión curricular institucional.",
+                "La pulpería: espacios y prácticas culturales.",
+                "Nuevas patologías sociales en la escuela. El adolescente adicto."
+            ]
+        },
+        {
+            "type":"tutor",
+            "name":"Lic. Terrada, Gabriela",
+            "formacion":[
+                "Egresada de la Universidad de Flores (Licenciatura en Educación Física y Deportes, 2002)",
+                "Egresada del Instituto Superior Palomar de Caseros (maestra nacional de Educación Física, 1991, Profesora nacional de Educación Física, 1992)",
+                "Estudios secundarios: Egresada del Colegio Sagrado Corazón (Bachiller con orientación docente), 1988",
+                "Estudios primarios: Egresada del Colegio Sagrada Familia, 1983",
+                "Curso de Timonel yate a vela y motor aprobado por la Prefectura Naval Argentina, Club Azopardo, 2003",
+                "-Instituto Centro Médico (Auxiliar de Enfermería y Primeros Auxilios), 1995",
+                "Escuela argentina de profesores de paddle.1992",
+                "Instituto North West (Inglés), 1990"
+            ],
+            "curriculum":[
+                "Prof. actividades de Campamento y Vida en la Naturaleza del Colegio J. Hernández de todos los niveles, 1994 a la fecha.",
+                "Prof. de Ed. Física en el Colegio José Hernández en todos los niveles, 1994 a la fecha.",
+                "Prof. de Ed. Física en la Escuela Serena del Instituto privado del Deporte en todos los niveles, 1996 a la fecha.",
+                "Profesora de la Perspectiva Motora ( Natación de primer año) del Profesorado en Ed. Física del IPD, 2004 a la fecha.",
+                "Profesora de la Perspectiva Motora ( Ed. Fís Infantil EPB y Polimodal) del Profesorado en Ed. Física del IPD,1996 a la fecha.",
+                "Coordinadora de Eventos Infantiles, Salón de eventos Theo, 2004 a la fecha.",
+                "Profesora de la Práctica de la Enseñanza (primer y segundo año) del Profesorado en Ed. Física del IPD, 2002 a la fecha.Coordinadora de la Escuela de Natación del Colegio J. Hernández de nivel inicial y EPB, 2006 a la fecha."
+            ],
+            "cursos":[
+                "Secretaria del Profesorado de Ed. Física San Martín.",
+                "Instituto Incorporado San Andrés, prof. Ed. Física.",
+                "Instituto Chilavert, prof. E. Física.",
+                "Jardín de Infantes de la escuela Serena del IPD, prof. y Coordinadora de Natación y Campamentos.",
+                "Escuela Serena del IPD, coordinadora de Ed. Física y Campamentos.",
+                "Colonias de vacaciones de la Municipalidad de San Martín, San Isidro y Country Pilar del Lago.",
+                "Campamentos educativos para la Comisión Nacional de Ed. Física de la República Oriental del Uruguay."
+            ]
+        }
+    ],
+    "cursos":[
+        {
+            "name":"RECONSTRUYENDO LA MEMORIA EN LA ESCUELA",
+            "res":"2096/14",
+            "pts":"0,10",
+            "hor":"120hs"
+        },
+        {
+            "name":"TRES DÉCADAS DE DEMOCRACIA EN ARGENTINA",
+            "res":"2096/14",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"EL ROL DE LOS MEDIOS AUDIOVISUALES EN EL AULA",
+            "res":"2096/14",
+            "pts":"0,10",
+            "hor":"120hs"
+        },
+        {
+            "name":"ACERCA DE LAS PRÁCTICAS DEMOCRÁTICAS EN LA ESCUELA",
+            "res":"2096/14",
+            "pts":"0,12",
+            "hor":"100hs"
+        },
+        {
+            "name":"LO AUDIOVISUAL COMO HERRAMIENTA DIDÁCTICA",
+            "res":"2096/14",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"EDUCAR CIUDADANOS CON VALORES",
+            "res":"2096/14",
+            "pts":"0,09",
+            "hor":"100hs"
+        },
+        {
+            "name":"BLOGS EDUCATIVOS: CLAVES DE APLICACIÓN",
+            "res":"2096/14",
+            "pts":"0,10",
+            "hor":"120hs"
+        },
+        {
+            "name":"PATRIMONIO, CIUDAD Y ESCUELA",
+            "res":"2096/14",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"DIVERSIDAD: APRENDER A VALORAR LO DISTINTO",
+            "res":"2096/14",
+            "pts":"0,09",
+            "hor":"100hs"
+        },
+        {
+            "name":"ESCUELA E HISTORIA RECIENTE: NUEVO ENFOQUE",
+            "res":"2096/14",
+            "pts":"0,12",
+            "hor":"120hs"
+        },
+        {
+            "name":"LAS EFEMÉRIDES DESDE UNA MIRADA RENOVADORA",
+            "res":"2149/14",
+            "pts":"0,12",
+            "hor":"120hs"
+        },
+        {
+            "name":"EDUCACIÓN SEXUAL INTEGRAL. FUNDAMENTOS Y ENFOQUES",
+            "res":"2149/14",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"ESCUELA Y PLANIFICACIÓN",
+            "res":"2096/14",
+            "pts":"0,12",
+            "hor":"100hs"
+        },
+        {
+            "name":"NUEVAS FORMAS DE LA CUIDADANÍA PARTICIPATIVA",
+            "res":"2096/14",
+            "pts":"0,10",
+            "hor":"100hs"
+        },
+        {
+            "name":"TRAYECTORIAS EDUCATIVAS DIVERSAS",
+            "res":"2715/15",
+            "pts":"0,10",
+            "hor":"120hs"
+        },
+        {
+            "name":"ESCUELA INTERCULTURAL. UN GRAN DESAFÍO",
+            "res":"2715/15",
+            "pts":"0,10",
+            "hor":"100hs"
+        },
+        {
+            "name":"APRENDIENDO CON LAS EFEMÉRIDES",
+            "res":"2715/15",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"CIUDADANÍA Y PARTICIPACIÓN EN LA ESCUELA",
+            "res":"2715/15",
+            "pts":"0,09",
+            "hor":"100hs"
+        },
+        {
+            "name":"EDUCANDO PARA LA LIBERTAD Y LA IGUALDAD",
+            "res":"2715/15",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"MALVINAS… EDUCAR PARA LA MEMORIA",
+            "res":"2715/15",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"LOS PUEBLOS ORIGINARIOS DE NUESTRO TERRITORIO",
+            "res":"2715/15",
+            "pts":"0,09",
+            "hor":"100hs"
+        },
+        {
+            "name":"ENTRE LA ESCUELA, EL PATRIMONIO Y LA CIUDAD",
+            "res":"2715/15",
+            "pts":"0,10",
+            "hor":"120hs"
+        },
+        {
+            "name":"EDUCACIÓN Y MEMORIA COLECTIVA",
+            "res":"2715/15",
+            "pts":"0,09",
+            "hor":"120hs"
+        },
+        {
+            "name":"LOS MEDIOS DE COMUNICACIÓN EN LA ESCUELA PRIMARIA",
+            "res":"2715/15",
+            "pts":"0,10",
+            "hor":"100hs"
+        },
+        {
+            "name":"CONSTRUIR EL CONOCIMIENTO ESCOLAR",
+            "res":"2715/15",
+            "pts":"0,10",
+            "hor":"100hs"
+        },
+        {
+            "name":"CIUDAD EDUCADORA E IDENTIDAD CIUDADANA",
+            "res":"923/16",
+            "pts":"0,12",
+            "hor":"120hs"
+        }
+    ]
 }
